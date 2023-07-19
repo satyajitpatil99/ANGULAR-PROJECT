@@ -1,0 +1,31 @@
+aside{
+    flex: 15%;
+    height: 500px;
+    background: url("../../../assets/images/sidebar.jpg");
+
+}
+section{
+    flex: 85%;
+    height: 500px;
+    /* margin-left: 160px; */
+    /* top:200px; */
+    /* background-color: gainsboro; */
+
+}
+.form-control{
+    border: 1px solid black;
+}
+
+.main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+input,textarea,select{
+    box-shadow: 0 0 5px black;
+}
+.dashboard-section{
+    /* background-image: url("../../../assets/images/"); */
+    background-size: cover;
+    color: white;
+}

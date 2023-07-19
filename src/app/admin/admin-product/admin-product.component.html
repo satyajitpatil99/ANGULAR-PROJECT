@@ -1,0 +1,48 @@
+
+
+      <form [formGroup]="productdata" (ngSubmit)="save(productdata.value)">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label >Title</label>
+            <input type="text" class="form-control" placeholder="Title" formControlName="title">
+          </div>
+          <div class="form-group col-md-6">
+            <label>Category</label>
+            <!-- <input type="text"  placeholder="Category" > -->
+            <select class="form-control" formControlName="category">
+              <option value="Men's">Men's</option>
+              <option value="Women's">Women's</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-3">
+            <label>Price</label>
+            <input type="number" class="form-control" placeholder="Price" formControlName="price">
+          </div>
+          <div class="form-group col-md-3">
+            <label>MRP</label>
+            <input type="number" class="form-control" placeholder="MRP" formControlName="mrp">
+          </div>
+          <div class="form-group col-md-3">
+            <label>Image</label>
+            <input type="url" class="form-control" placeholder="image" formControlName="image">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="exampleFormControlFile1">Upload Image</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1" onchange="imageUpload($event)" formControlName="image">
+          </div>
+        </div>
+        <div class="form-group col-md-10">
+          <label for="exampleFormControlTextarea1">Description</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" formControlName="description"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+
+
+      </form>
+
+
+
+   

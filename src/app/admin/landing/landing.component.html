@@ -1,0 +1,35 @@
+<header class="h-25">
+    <div class="pt-2 align-item-center text-center">
+        <h2 class="d-inline ml-3">Dashboard</h2>
+
+        <a (click)="logout()" class="btn btn-light float-right text-dark">Logout</a>
+        <a routerLink="/admin/product" class="btn btn-light float-right">Add Product</a>
+    </div>
+
+</header>
+<div class="main">
+    <!-- <app-dashboard-aside></app-dashboard-aside> -->
+    <!-- <app-dashboard-section></app-dashboard-section> -->
+    <!-- <router-outlet name="pra"></router-outlet>
+</div>  -->
+<aside class="dashboard-aside ">
+    <ul class="list-group">
+        <li class="mt-4"><a routerLink="/admin/dashboard" class="btn  text-uppercase font-weight-bold">Dashboard</a></li>
+        <li class="mt-4"><a routerLink="/admin/products" class="btn  text-uppercase font-weight-bold">Products</a></li>
+        <li class="mt-4"><a routerLink="/admin/product" class="btn  text-uppercase font-weight-bold">Product</a></li>
+        <li class="mt-4"><a routerLink="/admin/order" class="btn  text-uppercase font-weight-bold">Orders</a></li>
+        <!-- <li class="mt-4"><button class="btn" (click)="logout()">Logout</button></li> -->
+    </ul>
+  </aside>
+
+  <section class="dashboard-section">
+    <main id="main" >
+
+      <router-outlet></router-outlet>
+
+
+    </main>
+
+    </section>
+    </div>
+

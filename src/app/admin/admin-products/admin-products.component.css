@@ -1,0 +1,26 @@
+aside{
+    flex: 15%;
+    height: 500px;
+    /* background-color: darkgray; */
+    background: url("../../../assets/images/sidebar.jpg");
+
+    
+}
+section{
+    flex: 85%;
+    height: 100%;
+    /* margin-left: 160px; */
+    /* top:200px; */
+    /* background-color: gainsboro; */
+
+}
+th,td{
+    border: 1px solid black;
+    text-align: center;
+}
+
+.main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}

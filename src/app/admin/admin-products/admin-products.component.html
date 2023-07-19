@@ -1,0 +1,31 @@
+
+
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>No.</th>
+                    <th>Image</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>MRP</th>
+                    <th>Title</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tr *ngFor="let p of products; let i = index">
+                <td>{{i + 1}}</td>
+                <td><img src="{{p.image}}" width="50px" alt=""></td>
+                <td>{{p.category}}</td>
+                <td>{{p.price | currency:"INR"}}</td>
+                <td>{{p.mrp | currency:"INR"}}</td>
+                <td>{{p.title}}</td>
+                <td>
+                  <button class="btn" routerLink="/admin/product/{{p.id}}">Edit</button>
+                  <button class="btn"  (click)="deleteProduct(p.id)">Delete</button>
+                </td>
+            </tr>
+        </table>
+
+
+
